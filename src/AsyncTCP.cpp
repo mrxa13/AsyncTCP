@@ -29,11 +29,7 @@ extern "C"{
 #include "lwip/dns.h"
 }
 
-#if CONFIG_FREERTOS_UNICORE
 #define ASYNCTCP_RUNNING_CORE 0
-#else
-#define ASYNCTCP_RUNNING_CORE 1
-#endif
 
 /*
  * TCP/IP Event Task
